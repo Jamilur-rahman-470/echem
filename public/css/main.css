@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+header nav {
+  width: 100%;
+}
+
+.top-nav {
+  width: 85%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+@media (max-width: 430px) {
+  .top-nav {
+    width: 90%;
+  }
+}
+.top-nav .tag p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.top-nav .search form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.top-nav .search form input {
+  border: 2px solid rgba(1, 1, 1, 0.1);
+  width: 750px;
+  padding: 13px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-shadow: 10px 10px 25px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 25px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 25px -17px rgba(0, 0, 0, 0.75);
+}
+@media (max-width: 768px) {
+  .top-nav .search form input {
+    width: 360px;
+  }
+}
+.top-nav .search form button {
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  padding: 11px;
+  background: #df0040;
+}
+.top-nav .search form button svg {
+  stroke: #fff;
+}
+
+.bottom-nav {
+  width: 85%;
+  height: 6vh;
+  margin: 0 auto;
+}
+@media (max-width: 430px) {
+  .bottom-nav {
+    width: 90%;
+  }
+}
+.bottom-nav .links ul li {
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.bottom-nav .btns a {
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background: #333333;
+}
+
+.small-banner .content {
+  margin: 35px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px 20px;
+}
+@media (max-width: 768px) {
+  .small-banner .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 430px) {
+  .small-banner .content {
+    grid-template-columns: 1fr;
+  }
+}
+.small-banner .content a {
+  width: 100%;
+}
+.small-banner .content a .card {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.small-banner .content a .card img {
+  margin-right: 25px;
+}
+.small-banner .content a .card .info h3 {
+  margin: 10px 0;
+}
+
+body {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-transform: none;
+  text-decoration: none;
+  color: #000;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.row-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-justify-space {
+  justify-content: space-between;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

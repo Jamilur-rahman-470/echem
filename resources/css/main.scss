@@ -1,0 +1,65 @@
+@import "./mixin.scss";
+@import "./navbar.scss";
+@import "./small-banner.scss";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+
+
+body {
+    width: 100%; 
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-transform: none;
+    text-decoration: none;
+    color: #000;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.row-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-align-center{
+    align-items: center;
+}
+
+.flex-justify-center{
+    justify-content: center;
+}
+
+.flex-justify-space{
+    justify-content: space-between;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+    @include media('<=tablet'){
+        width: 90%
+    }
+}
