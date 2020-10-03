@@ -1,0 +1,74 @@
+.lg-banner {
+    .wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 20px 20px;
+        @include media("<=tablet") {
+            grid-template-columns: 1fr;
+        }
+    }
+    .card {
+        margin: 20px 0;
+
+        position: relative;
+        .overlay {
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: 0.3);
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+        }
+
+        .content {
+            position: absolute;
+            top: 20px;
+            left: 25px;
+            z-index: 10;
+            color: #fff;
+
+            width: 65%;
+            .title {
+                font-size: 30px;
+                font-weight: 700;
+                margin: 10px 0;
+            }
+
+            .sub {
+                font-size: 20px;
+                font-weight: 600;
+                margin: 15px 0;
+            }
+
+            .btn {
+                background-color: #e21953;
+                color: white;
+                padding: 8px 12px;
+                text-decoration: none;
+            }
+        }
+    }
+    .col-1 {
+        .card {
+            width: 100%;
+            height: calc(100vh / 2);
+            img {
+                width: 100%;
+                height: calc(100vh / 2);
+            }
+        }
+    }
+    .col-2 {
+        .card {
+            width: 100%;
+            height: calc(100vh / 3.1);
+            img {
+                width: 100%;
+                height: calc(100vh / 3.1);
+            }
+        }
+    }
+}

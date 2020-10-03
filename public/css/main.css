@@ -110,6 +110,101 @@ header nav {
   margin: 10px 0;
 }
 
+.lg-banner .wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px 20px;
+}
+@media (max-width: 768px) {
+  .lg-banner .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+.lg-banner .card {
+  margin: 20px 0;
+  position: relative;
+}
+.lg-banner .card .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.lg-banner .card .content {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  z-index: 10;
+  color: #fff;
+  width: 65%;
+}
+.lg-banner .card .content .title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.lg-banner .card .content .sub {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+.lg-banner .card .content .btn {
+  background-color: #e21953;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+.lg-banner .col-1 .card {
+  width: 100%;
+  height: calc(100vh / 2);
+}
+.lg-banner .col-1 .card img {
+  width: 100%;
+  height: calc(100vh / 2);
+}
+.lg-banner .col-2 .card {
+  width: 100%;
+  height: calc(100vh / 3.1);
+}
+.lg-banner .col-2 .card img {
+  width: 100%;
+  height: calc(100vh / 3.1);
+}
+
+.shop-by-cat {
+  margin-top: 30px;
+}
+.shop-by-cat .wrapper h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+.shop-by-cat .wrapper .cats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.recent-blog .wrapper {
+  width: 100%;
+  margin: 30px 0;
+}
+.recent-blog .wrapper h1 {
+  margin: 30px 0;
+  text-align: center;
+}
+.recent-blog .wrapper .blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 20px;
+}
+.recent-blog .wrapper .blogs .blog img {
+  width: 100%;
+}
+
 body {
   width: 100%;
   box-sizing: border-box;
