@@ -31,7 +31,7 @@
             </ul>
         </div>
         <div class="btns">
-            <a href="/">LOGIN</a>
+            <a href="/user/sign-in">LOGIN</a>
         </div>
     </div>
 </header>
