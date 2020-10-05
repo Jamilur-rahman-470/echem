@@ -84,3 +84,44 @@ header {
         }
     }
 }
+
+.mega-sup-menu,
+.mega-shop-menu,
+.mega-learn-menu {
+    display: none;
+    width: 100%;
+    height: 90vh;
+    z-index: 300;
+    position: absolute;
+    top: 14vh;
+    left: 0;
+    background-color: white;
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        @include media("<=tablet") {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include media("<=phone") {
+            grid-template-columns: 1fr;
+        }
+        .links {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            li {
+                margin: 10px 0;
+            }
+            h2 {
+                margin: 50px 0 0 0;
+            }
+        }
+    }
+}
+.mega-active {
+    display: block;
+}

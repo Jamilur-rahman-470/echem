@@ -19,14 +19,23 @@
     <div class="bottom-nav row-flex flex-justify-space flex-align-center">
         <div class="links">
             <ul class="row-flex flex-justify-center flex-align-center">
-                <li class="row-flex flex-align-center">
-                    <p>SHOP</p>
+                <li class="" id='mega-shop'>
+                    <p>SHOP <i data-feather="down"></i></p>
+                    <div class="mega-shop-menu">
+                        <x-mega-menu />
+                    </div>
                 </li>
-                <li>
+                <li id='mega-sup'>
                     <p>LEARN</p>
+                    <div class="mega-sup-menu">
+                        <x-mega-menu />
+                    </div>
                 </li>
-                <li>
+                <li id='mega-learn'>
                     <p>SUPPORT</p>
+                    <div class="mega-learn-menu">
+                        <x-mega-menu />
+                    </div>
                 </li>
             </ul>
         </div>

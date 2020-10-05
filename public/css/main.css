@@ -76,6 +76,64 @@ header nav {
   background: #333333;
 }
 
+.mega-sup-menu,
+.mega-shop-menu,
+.mega-learn-menu {
+  display: none;
+  width: 100%;
+  height: 90vh;
+  z-index: 300;
+  position: absolute;
+  top: 14vh;
+  left: 0;
+  background-color: white;
+}
+.mega-sup-menu .wrapper,
+.mega-shop-menu .wrapper,
+.mega-learn-menu .wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 768px) {
+  .mega-sup-menu .wrapper,
+.mega-shop-menu .wrapper,
+.mega-learn-menu .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 430px) {
+  .mega-sup-menu .wrapper,
+.mega-shop-menu .wrapper,
+.mega-learn-menu .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+.mega-sup-menu .wrapper .links,
+.mega-shop-menu .wrapper .links,
+.mega-learn-menu .wrapper .links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mega-sup-menu .wrapper .links li,
+.mega-shop-menu .wrapper .links li,
+.mega-learn-menu .wrapper .links li {
+  margin: 10px 0;
+}
+.mega-sup-menu .wrapper .links h2,
+.mega-shop-menu .wrapper .links h2,
+.mega-learn-menu .wrapper .links h2 {
+  margin: 50px 0 0 0;
+}
+
+.mega-active {
+  display: block;
+}
+
 .small-banner .content {
   margin: 35px 0;
   display: grid;
